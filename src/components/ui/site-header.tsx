@@ -8,6 +8,7 @@ const links = [
   ['/', 'Inicio'],
   ['/proyectos', 'Proyectos'],
   ['/ideas', 'Ideas'],
+  ['/sobre-mi', 'Sobre mí'],
   ['/contacto', 'Contacto'],
 ] as const
 
