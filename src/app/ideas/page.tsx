@@ -1,7 +1,7 @@
-import { PublicPage } from '@/components/ui/public-page'
+import { IdeasList } from '@/features/ideas/ideas-list'
 
 export const metadata = { title: 'Ideas' }
 
 export default function Page() {
-  return <PublicPage title="Ideas" message="Todavía no hay ideas públicas." />
+  return <section className="public-page catalog-page"><h1>Ideas</h1><IdeasList /></section>
 }

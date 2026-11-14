@@ -1,7 +1,7 @@
-import { PublicPage } from '@/components/ui/public-page'
+import { Catalog } from '@/features/portfolio/catalog'
 
 export const metadata = { title: 'Proyectos' }
 
 export default function Page() {
-  return <PublicPage title="Proyectos" message="Todavía no hay proyectos publicados." />
+  return <section className="public-page catalog-page"><h1>Proyectos</h1><Catalog /></section>
 }

@@ -97,4 +97,4 @@ Ver [DATABASE.md](DATABASE.md). RLS debe permitir solo públicos publicados y ad
 
 ## 11. ADR pendientes
 - **ADR-002:** SSR/Workers solo si se aprueba tras evidencia de requerimientos SEO/dinámicos.
-- **ADR-003:** estrategia de almacenamiento de medios privados/públicos y borrado diferido; definir en Sprint 2/3 con pruebas.
+- **ADR-003:** los medios del catálogo se mantienen en un bucket privado. El cliente descarga bajo RLS, que comprueba la publicación del proyecto en cada acceso evaluado por Storage. Se descartó el bucket público porque una URL conocida seguiría funcionando tras despublicar, y se evitó emitir enlaces firmados por su vigencia independiente del estado del proyecto. La comprobación del caché de Storage y las reglas de carga y borrado quedan para la integración y el Sprint 3. Una copia ya descargada puede conservarse fuera del sitio.
