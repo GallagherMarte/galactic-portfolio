@@ -6,3 +6,6 @@ next-env.d.ts
 playwright-report/
 test-results/
 .env*
+!.env.example
+supabase/.temp/
+supabase/.branches/
